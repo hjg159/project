@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  position: relative;
+  width: 1226px;
+  height: 460px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+.carousel {
+  position: absolute;
+  left: 0;
+  width: 10000px;
+}
+
+.carousel li {
+  float: left;
+}
+
+.carousel li img {
+  height: 460px;
+}
+
+.btns {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 100px;
+  margin-top: -50px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 100px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.btns div {
+  flex-basis: 40px;
+  cursor: pointer;
+  background-color: rgba(245, 56, 7, 0.3);
+}
+
+.cirs {
+  width: 100px;
+  position: absolute;
+  bottom: 5px;
+  right: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cirs li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.cirs li.active {
+  background-color: white;
+}
